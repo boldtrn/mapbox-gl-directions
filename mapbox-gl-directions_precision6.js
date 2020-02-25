@@ -6216,7 +6216,7 @@ function fetchDirections() {
 
     // Request params
     var options = [];
-    options.push('geometries=polyline');
+    options.push('geometries=polyline6');
     if (alternatives) options.push('alternatives=true');
     if (congestion) options.push('annotations=congestion');
     options.push('steps=true');
