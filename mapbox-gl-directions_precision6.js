@@ -6217,6 +6217,9 @@ function fetchDirections() {
     // Request params
     var options = [];
     options.push('geometries=polyline6');
+    options.push('roundabout_exits=true');
+    options.push('voice_instructions=true');
+    options.push('banner_instructions=true');
     if (alternatives) options.push('alternatives=true');
     if (congestion) options.push('annotations=congestion');
     options.push('steps=true');
