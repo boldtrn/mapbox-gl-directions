@@ -6227,7 +6227,7 @@ function fetchDirections() {
     if (language) options.push('language=' + language);
     if (accessToken) options.push('access_token=' + accessToken);
     request.abort();
-    request.open('GET', '' + api + profile + '/' + query + '.json?' + options.join('&'), true);
+    request.open('GET', '' + api + profile + '/' + query + '?' + options.join('&'), true);
 
     request.onload = function () {
       if (request.status >= 200 && request.status < 400) {
