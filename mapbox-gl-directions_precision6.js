@@ -6283,7 +6283,7 @@ function buildDirectionsQuery(state) {
   }
 
   query.push(destination.geometry.coordinates.join(','));
-  return encodeURIComponent(query.join(''));
+  return query.join('');
 }
 
 function normalizeWaypoint(waypoint) {
